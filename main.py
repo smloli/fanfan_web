@@ -67,7 +67,7 @@ class Novel:
                 # 转换成字符串
                 temp = ''.join(result)
                 # 判断段落分隔符
-                space = '    ' if '    ' not in temp else '\u3000'
+                space = '    ' if '    ' in temp else '\u3000'
                 temp = temp.replace(space, '\n')
                 f.write('\n' + title[i])
                 f.write(temp)
